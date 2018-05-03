@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4"><app-joke-form (jokeCreated)="addJoke($event)"></app-joke-form></div>
+    <div class="col-8"><app-joke *ngFor="let j of jokes" [joke]="j"></app-joke></div>
+  </div>
+
+
+</div>
